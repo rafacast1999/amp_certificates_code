@@ -38,5 +38,5 @@ try:
             print("Found: " + certificate_value)
         else:
             print("Missing item: " + certificate_value)
-except IOError as e:
+except subprocess.CalledProcessError as e:
     print("An error ocurred: ", e)
